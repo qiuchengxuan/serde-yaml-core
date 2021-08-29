@@ -1,0 +1,24 @@
+[package]
+authors = ["qiuchengxuan <qiuchengxuan@gmail.com>"]
+categories = ["no-std"]
+description = "serde-yaml for no_std programs"
+edition = "2018"
+keywords = ["serde", "yaml"]
+license = "MIT OR Apache-2.0"
+name = "serde-yaml-core"
+readme = "README.md"
+repository = "https://github.com/qiuchengxuan/serde-yaml-core"
+version = "0.1.1"
+
+[dependencies]
+ryu = "1.0"
+
+[dependencies.serde]
+default-features = false
+version = "1.0"
+
+[dev-dependencies]
+serde_derive = "1.0"
+
+[features]
+custom-error-messages = []
